@@ -1,6 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 @import "tailwindcss";
 
+@utility no-spinner {
+
+    /* Chrome, Safari, Edge, Opera */
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    &[type="number"] {
+        -moz-appearance: textfield;
+    }
+}
 
 @theme {
     --font-fredoka: "Fredoka", sans-serif;
@@ -12,4 +26,8 @@
     --color-mint: #82d9c9;
     --color-yellow: #f7cb61;
     --color-dark-surface: #242424;
+
+    /* SHADOW */
+    --shadow-black: 10px 9px 1px 1px black;
+    /* SHADOW */
 }

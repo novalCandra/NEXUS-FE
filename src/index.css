@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 @import "tailwindcss";
+@plugin 'tailwind-scrollbar';
 
 @utility no-spinner {
 
@@ -29,5 +30,8 @@
 
     /* SHADOW */
     --shadow-black: 10px 9px 1px 1px black;
+    --shadow-black-200: 4px 4px 1px 1px black;
+    --shadow-white-200: 4px 4px 1px 1px white;
+    --shadow-black-100: 3px 3px 1px 1px black;
     /* SHADOW */
 }

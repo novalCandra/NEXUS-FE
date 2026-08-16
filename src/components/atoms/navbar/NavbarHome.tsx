@@ -4,7 +4,7 @@ import ButtonNavbar from "../button/buttonNavbar"
 function NavbarHome() {
     return (
         <motion.div initial={{ opacity: 0, y: -100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1, duration: 0.3 }}>
-            <nav className="flex flex-row justify-between py-4 bg-paper px-5 md:px-20 items-center border-b-4 border-black">
+            <nav className="flex flex-row justify-between py-4 bg-paper px-5 md:px-5 lg:px-20 items-center border-b-4 border-black">
                 <h2 className="flex flex-row items-center gap-1 text-2xl font-fredoka font-semibold"><span className="px-2 py-1 rounded-md bg-pink text-black">V</span>iraOliv</h2>
                 <ul className="hidden md:flex flex-row justify-between items-center space-x-5">
                     <li className="font-fredoka font-medium text-sm">FEATURES</li>

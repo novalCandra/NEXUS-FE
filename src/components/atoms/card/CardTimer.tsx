@@ -2,7 +2,7 @@ import { Clock } from "lucide-react"
 
 const CardTimerVirtual = () => {
     return (
-        <div className="bg-mint flex flex-col w-full md:w-100 h-40 md:h-[35vh] shadow-black-100 px-4 py-3 rounded-md justify-between border-2 border-black">
+        <div className="bg-mint flex flex-col w-full md:w-140 lg:w-100 h-40 md:h-[33vh] shadow-black-100 px-4 py-3 rounded-md justify-between border-2 border-black">
             <div className="flex flex-row justify-between items-center">
                 <Clock size={20} />
                 <span className="uppercase text-sm font-fredoka text-black font-semibold">Focus Ritual</span>

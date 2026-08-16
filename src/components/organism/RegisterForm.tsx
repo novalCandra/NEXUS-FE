@@ -1,3 +1,4 @@
+import { useState } from "react";
 import ButtonGoogle from "../atoms/button/ButtonGoogle";
 import ButtonShowPassword from "../atoms/button/ButtonShowPassowrd";
 import Button from "../atoms/button/Index";
@@ -5,6 +6,10 @@ import SpanAuth from "../atoms/span";
 import FormField from "../molecules/FormField";
 
 const RegisterForm = () => {
+  const [showPassword, setShowPassword] = useState<boolean>(false);
+  function handlePassword() {
+    setShowPassword(prev => !prev)
+  }
   return (
     <form className="flex flex-col w-80 md:w-100 gap-5">
       <FormField
@@ -26,7 +31,7 @@ const RegisterForm = () => {
         name="password"
         placeholder="******"
         textContent="password"
-        type="password"
+        type={showPassword ? "text" : "password"}
       />
       <Button type="submit">Create my Space</Button>
       <div className="flex flex-row justify-between items-center">
@@ -42,7 +47,7 @@ const RegisterForm = () => {
         textSpan="Already have an account?"
         textLink="Sign in"
       />
-      <ButtonShowPassword stylePosition="top-116 md:top-117 right-10" />
+      <ButtonShowPassword stylePosition="top-116 md:top-117 right-10" showPassword={showPassword} onToggle={handlePassword} />
     </form>
   );
 };

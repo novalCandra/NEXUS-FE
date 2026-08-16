@@ -3,7 +3,7 @@ import CardTodoList from "./CardTodoList"
 
 const CardLayoutTask = () => {
     return (
-        <div className="bg-white w-full md:w-200 flex flex-col space-y-2 px-4 py-3 border-2 border-black shadow-black-100">
+        <div className="bg-white h-140 md:h-100 lg:h-80 w-full md:w-140 lg:md-150 flex flex-col space-y-2 px-4 py-3 border-2 border-black shadow-black-100">
             <div className="flex flex-row space-x-2.5 justify-between">
                 <div className="flex flex-col space-y-1">
                     <span className="text-md font-fredoka text-black">Tuesday, October 24</span>

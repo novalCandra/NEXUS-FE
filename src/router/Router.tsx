@@ -9,6 +9,7 @@ import PageHome from "../page/home/home";
 import LayoutDashboardHome from "../layouts/LayoutDashboardHome";
 import ProfilePage from "../page/auth/user/profille/profile";
 import ProctedAuth from "./auth/ProctedAuth";
+import PageNotFound from "../page/404";
 const router = createBrowserRouter([
   {
     path: "/login",
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       { path: "profile", Component: ProfilePage },
     ],
   },
+  {
+    path: "*",
+    element: < PageNotFound />
+  }
 ]);
 
 export default router;

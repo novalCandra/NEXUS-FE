@@ -7,6 +7,8 @@ import LayoutsUser from "../layouts/LayoutsUser";
 import PomodoroPage from "../page/auth/user/pomodoro/pomodoro";
 import PageHome from "../page/home/home";
 import LayoutDashboardHome from "../layouts/LayoutDashboardHome";
+import ProfilePage from "../page/auth/user/profille/profile";
+import ProctedAuth from "./auth/ProctedAuth";
 const router = createBrowserRouter([
   {
     path: "/login",
@@ -29,11 +31,14 @@ const router = createBrowserRouter([
   },
   {
     Component: LayoutsUser,
+    loader: ProctedAuth,
     children: [
-      { path: "today", Component: DashboardUser },
+      { path: "dashboard", Component: DashboardUser },
       { path: "pomodoro", Component: PomodoroPage },
+      { path: "profile", Component: ProfilePage },
     ],
   },
 ]);
 
 export default router;
+

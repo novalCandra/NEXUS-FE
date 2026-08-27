@@ -9,7 +9,7 @@ type ListTypeNavbar = {
 const ListNavbar = (props: ListTypeNavbar) => {
     const { id, path, reloadMapping } = props
     return (
-        <ul className="hidden md:flex flex-row justify-between items-center space-x-5">
+        <ul className="hidden md:flex flex-row justify-between items-center space-x-5 space">
             {reloadMapping.map((item) => (
                 <Link key={id} to={path} className="font-fredoka font-medium text-sm">{item}</Link>
             ))}

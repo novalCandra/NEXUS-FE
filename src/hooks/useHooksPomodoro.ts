@@ -10,12 +10,12 @@ export const useHooksPomodoro = () => {
     }
 
     useEffect(() => {
-        let intervalTimer: ReturnType<typeof setInterval> | number | null = null;
+        let intervalTimer: ReturnType<typeof setInterval> | null = null;
         if (start) {
             intervalTimer = setInterval(() => {
                 setTimer((prev) => {
                     if (prev <= 1) {
-                        clearInterval(intervalTimer)
+                        // clearInterval(intervalTimer)
                         return 0
                     }
                     return prev - 1

@@ -1,5 +1,7 @@
 import { redirect } from "react-router";
 
+
+
 const ProctedAuth = ({ children }) => {
     const token = localStorage.getItem("token");
     if (!token ) {

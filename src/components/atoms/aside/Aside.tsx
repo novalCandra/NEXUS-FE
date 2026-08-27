@@ -4,7 +4,7 @@ const AsidSidebar = () => {
   return (
     <div className="hidden sm:hidden md:hidden lg:flex bg-paper border-r-4 border-black flex-col min-h-screen w-65 px-5 py-10 space-y-5">
       <h2 className="font-fredoka text-dark-surface font-semibold cursor-pointer">HOMEPAGE</h2>
-      <ul className="space-y-2 px-1">
+      <ul className="space-y-10 px-1">
         {ConfigAsidebar.map((item) => (
           <li key={item.id} >
             <NavLink to={item.path} className={({ isActive }) =>

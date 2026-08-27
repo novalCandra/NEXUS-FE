@@ -17,7 +17,7 @@ export default function HeroPrimary() {
                 <CardLayoutTask />
                 <CardTimerVirtual />
             </div>
-            <div className='absolute -top-64 -right-0 md:-right-110 lg:right-30 bg-purple h-64 md:h-100 w-64 md:w-100 rounded-full border-2 border-black -z-1' />
+            <div className='absolute -top-64 -right-0 md:-right-100 lg:right-30 bg-purple h-64 md:h-100 w-64 md:w-100 rounded-full border-2 border-black -z-1' />
         </div>
     )
 }

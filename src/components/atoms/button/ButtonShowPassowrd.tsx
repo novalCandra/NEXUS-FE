@@ -2,8 +2,8 @@ import { Eye, EyeOff } from "lucide-react";
 
 type TypeButtonShowPassword = {
     stylePosition: string
-    showPassword: boolean
-    onToggle: () => void
+    showPassword?: boolean
+    onToggle?: () => void
 }
 
 const ButtonShowPassword = (props: TypeButtonShowPassword) => {

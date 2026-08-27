@@ -9,14 +9,3 @@ const ProctedAuth = () => {
 }
 
 export default ProctedAuth
-
-// export const ProctedAuth: React.FC<ProtectedRouteProps> = ({
-//     isAuthorization,
-//     children
-// }) => {
-//     const token = localStorage.getItem("token");
-//     if (!token || !isAuthorization) {
-//         return <Navigate to={"/login"} />
-//     }
-//     return children 
-// }

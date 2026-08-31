@@ -1,4 +1,4 @@
-import { Clock, LayoutDashboard, type LucideIcon, User } from "lucide-react";
+import { Calendar, Clock, LayoutDashboard, type LucideIcon, User } from "lucide-react";
 
 interface TypeConfigComponents {
     id : number;
@@ -22,6 +22,12 @@ export const ConfigAsidebar : TypeConfigComponents[]  = [
     },
     {
         id: 3,
+        spanLabel: "Calender",
+        path: "/calender",
+        icon: Calendar
+    },
+    {
+        id: 4,
         spanLabel: "Profile",
         path: "/profile",
         icon: User

@@ -28,12 +28,12 @@ const AuthTemplate = (props: TypeAuthTemplate) => {
     >
       <h2 className="font-fredoka text-xl md:text-2xl">
         <span className="bg-pink px-2 text-2xl md:text-3xl ring-2 ring-black">
-          N
+          V
         </span>{" "}
-        EXUS
+        iraOliv
       </h2>
       <div
-        className={`flex flex-col items-center bg-white ${tinggiCard} py-10 space-y-5 justify-between ring-2 ring-black shadow-black relative`}
+        className={`flex flex-col items-center bg-white ${tinggiCard} py-11 space-y-5 justify-between ring-2 ring-black shadow-black relative`}
       >
         <div className="flex flex-col justify-center items-center space-y-2 px-10 text-center">
           <span className={`px-2 py-2  ${styleIcon}  ring-2 ring-black`}>

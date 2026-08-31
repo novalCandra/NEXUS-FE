@@ -19,8 +19,8 @@ const LoginForm = () => {
         setShowPassword(prev => !prev)
     }
 
-    const onSubmitData = (values) => {
-        console.log(values)
+    const onSubmitData = () => {
+        console.log()
     }
     return (
         <form onSubmit={handleSubmit(onSubmitData)} className="flex flex-col w-80 md:w-100 gap-6 md:gap-4">

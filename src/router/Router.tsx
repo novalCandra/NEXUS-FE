@@ -10,6 +10,7 @@ import LayoutDashboardHome from "../layouts/LayoutDashboardHome";
 import ProfilePage from "../page/auth/user/profille/profile";
 import ProctedAuth from "./auth/ProctedAuth";
 import PageNotFound from "../page/404";
+import CalenderPage from "../page/auth/user/calender/calender";
 const router = createBrowserRouter([
   {
     path: "/login",
@@ -36,6 +37,7 @@ const router = createBrowserRouter([
     children: [
       { path: "dashboard", Component: DashboardUser },
       { path: "pomodoro", Component: PomodoroPage },
+      { path: "calender", Component: CalenderPage },
       { path: "profile", Component: ProfilePage },
     ],
   },

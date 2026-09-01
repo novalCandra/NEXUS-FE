@@ -1,4 +1,3 @@
-// import { Outlet } from "react-router";
 import NavbarTemplateUser from "../components/template/NavbarTemplateUser";
 import AnimatedOutlet from "../anim/animatedOutlet";
 

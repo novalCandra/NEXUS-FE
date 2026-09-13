@@ -1,7 +1,7 @@
 import { Clock } from "lucide-react";
-import { Activity } from "react";
 import ModalAddNumber from "../modal/ModalAddNumber";
 import { useHooksPomodoro } from "../../../hooks/useHooksPomodoro";
+import ModalOverlay from "../modal/ModalOverlay";
 
 const CardPomoro = () => {
   const { timer, addTimer, formatTimer, handleAddTimer, setStart, start, setAddTimer } = useHooksPomodoro()
@@ -19,9 +19,9 @@ const CardPomoro = () => {
           <Clock size={20} />
         </button>
       </div>
-      <Activity mode={addTimer ? "visible" : "hidden"} >
+      <ModalOverlay isOpen={addTimer} onClose={() => setAddTimer(false)}>
         <ModalAddNumber removeModal={() => setAddTimer(false)} />
-      </Activity>
+      </ModalOverlay>
     </div>
 
   );

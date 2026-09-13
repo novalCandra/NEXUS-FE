@@ -14,6 +14,7 @@ const AsidSidebar = () => {
               <span className="font-fredoka text-xl">{item.spanLabel}</span>
             </NavLink>
           </li>
+
         ))}
       </ul>
     </div >

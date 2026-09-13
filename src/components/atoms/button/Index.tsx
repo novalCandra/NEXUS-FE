@@ -1,6 +1,7 @@
 type ButtonType = {
     children: string
     type: "submit" | "button" | "reset"
+
 }
 const Button = (props: ButtonType) => {
     const { children, type } = props;

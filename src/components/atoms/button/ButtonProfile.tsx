@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ImageProfile from "../../../assets/profile/avatar_batman.png"
-import { Bell, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { ConfigAsidebar } from "../../../config/components/AsideConfig";
 import { NavLink } from "react-router";
 import { motion } from "motion/react"
@@ -8,9 +8,6 @@ const ButtonProfile = () => {
   const [stateAside, setStateAside] = useState<boolean>(false);
   return (
     <div className="flex flex-row justify-between gap-4 items-center">
-      <button type="button">
-        <Bell size={26} className="size-7" />
-      </button>
       <button type="button" className="ring-2 ring-black rounded-full">
         <img src={ImageProfile} alt="Profile" className="w-10 md:w-12 rounded-full" />
       </button>

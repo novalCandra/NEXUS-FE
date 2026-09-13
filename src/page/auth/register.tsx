@@ -9,7 +9,7 @@ const PageRegister = () => {
         Icon={User}
         textContentHeading="Make space for more."
         textContentDeskripsi="Start your second brain in one calm place."
-        tinggiCard="w-96 md:w-120 md:h-190"
+        tinggiCard="w-96 md:w-120 h-205 md:h-200"
         styleIcon="bg-purple"
       >
         <RegisterForm />

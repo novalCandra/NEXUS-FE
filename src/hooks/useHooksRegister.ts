@@ -1,9 +1,11 @@
 import { useNavigate } from "react-router";
-import { serviceAuthRegister } from "../utils/service/auth.service";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { SchemaAuthRegister } from "../utils/schema/schema";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { fetcingDataAuthRegister } from "./redux/reduxHookAuth";
+import type { Appdistch } from "./store/store";
 
 export const useHookAuthRegister = () => {
     const [showPassword, setShowPassword] = useState<boolean>(false);
@@ -19,18 +21,15 @@ export const useHookAuthRegister = () => {
     function handlePassword() {
         setShowPassword(prev => !prev)
     }
+    const dispacth = useDispatch<Appdistch>()
     const dataOnsubmit = async (data: object) => {
         try {
-            const request = await serviceAuthRegister(data);
-            const response = await request.json();
-            if (request.status !== 200) {
-                console.error(response.message)
-            }
+            await dispacth(fetcingDataAuthRegister(data)).unwrap();
             navigate("/login")
         } catch (error) {
             return console.error(error)
         }
     }
 
-    return {showPassword, register, handleSubmit, errors, handlePassword, dataOnsubmit}
+    return { showPassword, register, handleSubmit, errors, handlePassword, dataOnsubmit }
 }

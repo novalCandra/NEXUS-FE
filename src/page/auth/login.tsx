@@ -10,7 +10,7 @@ const PageLogin = () => {
         Icon={Clock}
         textContentHeading="Welcome Back."
         textContentDeskripsi="Pick up where your thoughts left off."
-        tinggiCard="w-96 md:w-120 md:h-135"
+        tinggiCard="w-90 md:w-120 md:h-145"
         styleIcon="bg-purple"
       >
         <LoginForm />

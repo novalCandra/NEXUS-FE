@@ -13,7 +13,7 @@ const LoginForm = () => {
             {errors?.password?.type && <span className="text-red-500 font-fredoka text-base">{errors?.password?.message}</span>}
             <Button type="submit">SIGN IN</Button>
             <SpanAuth path="/register" textSpan="New here?" textLink="Create Account" />
-            <ButtonShowPassword stylePosition={`absolute ${errors.password ? "top-55 " : "top-43 "} md:top-36 right-1`} showPassword={showPassword} onToggle={tampilkanPassword} />
+            <ButtonShowPassword stylePosition={`absolute ${errors.password ? "top-55 md:top-46" : "top-43 "} md:top-36 right-1`} showPassword={showPassword} onToggle={tampilkanPassword} />
         </form>
     )
 }

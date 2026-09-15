@@ -11,6 +11,7 @@ import ProfilePage from "../page/auth/user/profille/profile";
 import ProctedAuth from "./auth/ProctedAuth";
 import PageNotFound from "../page/404";
 import CalenderPage from "../page/auth/user/calender/calender";
+import taskpageUsers from "../page/auth/user/task/task";
 const router = createBrowserRouter([
   {
     path: "/login",
@@ -39,6 +40,7 @@ const router = createBrowserRouter([
       { path: "pomodoro", Component: PomodoroPage },
       { path: "calender", Component: CalenderPage },
       { path: "profile", Component: ProfilePage },
+      { path: "task", Component: taskpageUsers }
     ],
   },
   {

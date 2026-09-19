@@ -9,8 +9,6 @@ export const getProfileUsers = async () => {
         }
     })
 }
-
-
 export const updateProfileUsers = async (data: object) => {
     const token = localStorage.getItem("token");
     return fetch(`${import.meta.env.VITE_API_BACKEND}/profile/update`, {
